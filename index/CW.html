@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh_CN">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="image/CWpng.png">
-    <link rel="stylesheet" href="CW.css">
-    <title>CW模拟器</title>
-</head>
-<body>
-    <div class="main_box">
-        <div class="box_little">
-            <input class="box_CW_indi" type="text" id="CW_input_id" />
-        </div>
-        <div class="box_little">
-            <button class="box_CW_Button" id="CW_button_id1">Enter&nbsp;run</button>
-            <button class="box_CW_Button" id="CW_button_id2">Enter&nbsp;run</button>
-            <button class="box_CW_Button" id="CW_button_id3">Enter&nbsp;run</button>
-        </div>
-        <br />
-        <h1 style="height: 50px;line-height: 100px;text-align: center;color:rgb(42,70,122)">建设中...请等待</h1>
-        <h2 style="text-align: center;margin-top: 80px"><img style="border-radius: 20px" width="100px" src="https://lts.uesmods.top/img/IIII.gif"/></h2>
-    </div>
-    <script src="CW.js"/>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="image/CWpng.png">
+		<title>等待中...</title>
+	</head>
+	<script>
+		//判断设备类型：mobile / tablet / desktop
+		function getDeviceType(){
+			const ua = navigator.userAgent;
+			if(/iPad|Android(?!.*Mobile)/i.test(ua)){
+				return 'tablet';
+			}
+			if(/Mobile|iPhone|iPod|Android|BlackBerry|IEMobile|Opera Mini/i.test(ua)){
+				return 'mobile';
+			}
+			return 'desktop';
+		}
+		const device = getDeviceType();
+		if(device == 'mobile'){
+			window.location.href = "CwDesktop.html";
+		}else{
+			window.location.href = "Blackhole.html";
+		}
+	</script>
+	<body>
+	</body>
 </html>
