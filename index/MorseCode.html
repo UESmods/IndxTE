@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./MorseCode.css">
+    <link rel="icon" href="./img/Morescode.png" type="image/png">
+    <title>摩尔斯电码</title>
+</head>
+<body>
+    <div class="codemain">
+        <div class="word_morse">
+            <h1>摩尔斯电码</h1>
+			<hr />
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;摩尔斯电码由美国发明家塞缪尔·摩尔斯（Samuel Morse）于1830年代发明，是一种通过点和划（短信号和长信号）来表示字母、数字和符号的编码方式。</p>
+            <hr />
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;摩尔斯电码的发明源于摩尔斯对快速通信的需求。在1832年，他在一次航海旅途中萌生了利用电信号传递信息的想法。经过多年的研究和改进，他于1844年成功通过电报机发送了第一条摩尔斯电码信息：“What hath God wrought”（神创造了什么）。</p>
+            <hr />
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;摩尔斯电码广泛应用于电报通信、军事和航空领域，成为现代通信技术的重要基础之一。</p>
+        </div>
+        <button id="word_on_off">关闭介绍</button>
+        <br/>
+        <div class="Mandmain">
+			<input id="enter_word" type="text" placeholder="请输入密文或原文，用“ ”隔开">
+			<p id="print_word">解密的原文或加密的密文在这里</p>
+			<button id="start_code">开始</button>
+			<button id="start_clean">清空</button>
+			<h6>摩斯电码对照表</h6>
+			<img class="morse_table" src="img/Mors.png">
+		</div>
+    </div>
+    <script src="./MorseCode.js"></script>
+</body>
+</html>

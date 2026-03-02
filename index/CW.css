@@ -1,0 +1,55 @@
+/* index.css */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML */
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* General Link Styles */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.main_box{
+    width: auto;
+    height: auto;
+    margin: 50px 50px 0 50px;
+    background: #86bbff;
+    border-radius: 5ch;
+    float: right;
+}
+
+.box_little{
+    width: auto;
+    height: auto;
+    /*background: #2d2d80;*/
+    margin: 25px 50px;
+}
+
+.box_CW_indi{
+    width: 100%;
+    height: auto;
+
+}
+
+.box_CW_Button{
+    margin: 2px 0;
+    padding: 10px 20px;
+    font: 700 24px "Arial Black";
+    background: #2d2d80;
+    color: #f4f4f4;
+}

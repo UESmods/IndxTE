@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/DHY.png">
+    <title>小小导航页，小何才露尖尖角</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* 纵向排列 */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("./img/backgrund.jpg");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            gap: 25px; /* 按钮之间的间距 */
+        }
+
+        .nav-button {
+            text-decoration: none;
+            color: #fff;
+            background-color: rgba(28, 74, 148, 0.5);
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            cursor: pointer; /* 鼠标悬停时显示小手 */
+            width: 200px; /* 统一按钮宽度 */
+            text-align: center;
+            border: none;
+        }
+
+        /* 鼠标悬停效果 */
+        .nav-button:hover {
+            transform: translateY(-5px);
+            background-color: #0056b3;
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+        }
+
+        /* 按钮点击动画：按下时的下沉和波纹效果 */
+        .nav-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+            background-color: #004085;
+        }
+        
+        .nav-button:active:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease-out;
+            opacity: 0;
+        }
+
+        .nav-button:active:before {
+            transform: translate(-50%, -50%) scale(2);
+            opacity: 1;
+            transition: 0s;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://tozi.uesmods.top" class="nav-button">骰子工具</a>
+    <a href="Blackhole.html" class="nav-button">黑洞</a>
+    <a href="MorseCode.html" class="nav-button">摩斯密码</a>
+    <a href="https://uesmods.top" class="nav-button">博客主站</a>
+    <a href="#" class="nav-button">暂时还没想好弄啥</a>
+
+</body>
+</html>

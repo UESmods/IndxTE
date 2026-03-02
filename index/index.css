@@ -1,0 +1,60 @@
+/* index.css */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* General Link Styles */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Input Styles */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Additional styles can be added as needed */
