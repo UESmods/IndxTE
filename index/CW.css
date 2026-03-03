@@ -5,6 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	touch-callout: none;
 }
 
 /* Body and HTML */
@@ -24,31 +28,120 @@ a:hover {
     text-decoration: underline;
 }
 
+.fl{float: left;}
+.fr{float: right;}
+
+.navigation{
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+}
+.navigation a{
+	padding-left: 20px;
+	font: normal 700 16px/40px "Microsoft YaHei";
+	color: #fff;
+}
+
 .main_box{
-    width: auto;
-    height: auto;
-    margin: 50px 50px 0 50px;
-    background: #86bbff;
-    border-radius: 5ch;
-    float: right;
+	width: auto;
+	height: auto;
+    margin: 0 auto;
 }
 
-.box_little{
-    width: auto;
-    height: auto;
-    margin: 25px 50px;
+.box_left{
+	width: 500px;
+	height: 500px;
+	background-color: #fff;
+	margin: 50px 25px;
+	padding: 25px;
+	border: 5px solid #000;
+	border-radius: 50px;
+}
+.box_text_prompt{
+	font: normal 700 16px/16px "Microsoft YaHei";
 }
 
-.box_CW_indi{
-    width: 100%;
-    height: auto;
-
+.box_right{
+	width: 500px;
+	height: 500px;
+	margin: 50px 25px;
+}
+.box_right_up{
+	height: 250px;
+	width: 500px;
+	
+}
+.box_right_up p{
+	padding: 50px 0 50px 0;
+	height: 250px;
+	background-color: #fff;
+	font: normal 700 50px/130px "Microsoft YaHei";
+	text-align: center;
+	border: 5px solid #000;
+	border-radius: 50px;
+}
+.box_right_down{
+	width: 500px;
+	height: 300px;
 }
 
-.box_CW_Button{
-    margin: 2px 0;
-    padding: 10px 20px;
-    font: 700 24px "Arial Black";
-    background: #2d2d80;
-    color: #f4f4f4;
+.keyD{
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	border: 5px solid #000;
+	border-radius: 50px;
+	font: normal 700 24px "Microsoft YaHei";
+	margin-top: 50px;
+}
+.keyD:hover{
+	background-color: #aaa;
+}
+.keyD:active{
+	color: #fff;
+	background-color: #aaa;
+}
+
+.mobile_box{
+	width: 100%;
+	height: 500px;
+}
+.main_box .mobile_box:first-child{
+	margin: 30px 0 0 0;
+	padding: 10px;
+	height: 50px;
+	border-radius: 20px 20px 0 0;
+	border: 5px solid #000;
+	border-bottom: 0;
+	background-color: #fff;
+}
+.main_luce{
+	width: 200px;
+}
+.DP{
+	background-color: #fff;
+
+}
+.Put1{
+	background-color: #fff;
+}
+.main_box .mobile_box:nth-child(2){
+	border-radius: 0 0 30px 30px;
+	padding: 10px;
+	height: 280px;
+	border: 5px solid #000;
+	background-color: #fff;
+}
+.main_box .mobile_box:nth-child(3) #TelegraphKey{
+	background-color: #fff;
+	width: 300px;
+	height: 230px;
+	border: 5px solid #000;
+	font: normal 700 64px "Microsoft YaHei";
+	border-radius: 30px;
+	margin: 30px 0 0 0;
+}
+.main_box .mobile_box:nth-child(3) #TelegraphKey:active{
+	background-color: #333;
+	color: #fff;
 }

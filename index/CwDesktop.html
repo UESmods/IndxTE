@@ -7,18 +7,22 @@
     <title>CW模拟器</title>
 </head>
 <body>
-    <div class="main_box">
-        <div class="box_little">
-            <input class="box_CW_indi" type="text" id="CW_input_id" />
-        </div>
-        <div class="box_little">
-            <button class="box_CW_Button" id="CW_button_id1">Enter&nbsp;run</button>
-            <button class="box_CW_Button" id="CW_button_id2">Enter&nbsp;run</button>
-            <button class="box_CW_Button" id="CW_button_id3">Enter&nbsp;run</button>
-        </div>
-        <br />
-        
+	<div class="navigation">
+		<a href="index.html">返回主页</a>
+	</div>
+    <div class="main_box" style="width: 1200px;">
+		<div class="fl box_left">
+			<p class="fl box_text_prompt">文本输出:</p>
+		</div>
+		<div class="fl box_right">
+			<div class="box_right_up">
+				<p id="display">555</p>
+			</div>
+			<div class="box_right_down">
+				<button id="TelegraphKey" class="keyD">可点击电建（keyboard：spacebar）</button>
+			</div>
+		</div>
     </div>
-    <script src="CW.js"/>
 </body>
+<script src="CW.js"></script>
 </html>
