@@ -1,19 +1,20 @@
 console.log('Happy developing ✨')
-const screen_size = document.getElementsByClassName('main_box')[0];
 
-// function updateScreenSize() {
-//     const Swidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-//     // const Sheight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+var audio = new Audio('audio/Key.mp3')
 
-//     screen_size.style.width = (Swidth-100) + 'px';
-//     // screen_size.style.height = (Sheight-100) + 'px';
-// }
+const TK = document.getElementById('TelegraphKey');
+const TT = document.getElementById('TableTxt');
+const DP = document.getElementById('display');
 
-// updateScreenSize();
-
-// window.addEventListener('resize',()=>{
-//    requestAnimationFrame(updateScreenSize);
-// });
-// window.addEventListener('orientationchange',()=>{
-//     requestAnimationFrame(updateScreenSize);
-// });
+TK.addEventListener('mousedown', function(){
+	audio.play();
+},false);
+TK.addEventListener("touchstart",function(){
+	audio.play();
+},);
+TK.addEventListener('mouseup', function(){
+	audio.pause();
+},false);
+TK.addEventListener('touchend', function(){
+	audio.pause();
+},false);
