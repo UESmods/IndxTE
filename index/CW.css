@@ -120,7 +120,8 @@ a:hover {
 }
 .DP{
 	background-color: #fff;
-
+	text-align: center;
+	font: normal 700 18px "Microsoft YaHei";
 }
 .Put1{
 	background-color: #fff;
