@@ -64,6 +64,8 @@ MyTable/
 │   ├── CW.html                     # CW 练习入口
 │   ├── CwDesktop.html              # 桌面端 CW 练习
 │   ├── CwMobile.html               # 移动端 CW 练习
+│   ├── CW.css                      # CW 练习样式
+│   ├── CW.js                       # CW 练习脚本
 │   ├── Blackhole.html              # 黑洞页面
 │   ├── Blackhole.css               # 黑洞样式
 │   ├── Blackhole.js                # 黑洞脚本
@@ -72,11 +74,13 @@ MyTable/
 │   ├── image/                      # 图片资源
 │   │   ├── 1.jpg, 2.jpg, 3.jpg
 │   │   └── CWpng.png               # CW 图标
-│   └── img/                        # 图片资源
-│       ├── backgrund.jpg           # 背景图
-│       ├── DHY.png                 # 网站图标
-│       ├── Morescode.png           # 摩尔斯图标
-│       └── Mors.png                # 摩斯对照表
+│   ├── img/                        # 图片资源
+│   │   ├── backgrund.jpg           # 背景图
+│   │   ├── DHY.png                 # 网站图标
+│   │   ├── Morescode.png           # 摩尔斯图标
+│   │   └── Mors.png                # 摩斯对照表
+│   └── dw/                         # 下载资源
+│       └── shing.apk               # 应用安装包
 ├── README.md                       # 项目说明文档
 └── .user.ini                       # 服务器配置
 ```
@@ -163,6 +167,25 @@ background-image: url("./img/backgrund.jpg");
 CW 练习页面会自动检测设备类型并跳转到对应页面：
 - 移动端 → `CwMobile.html`
 - 桌面端 → `CwDesktop.html`
+
+### 下载资源
+- **shing.apk**: 位于 `index/dw/` 目录，可通过链接提供下载
+
+---
+
+## ❓ 常见问题
+
+**Q: 为什么页面加载后显示空白？**
+A: 请确保通过 Web 服务器访问（如 Live Server），直接打开本地文件可能导致部分功能受限。
+
+**Q: CW 练习没有声音？**
+A: 检查浏览器是否允许自动播放音频，部分浏览器需要用户交互后才能播放声音。
+
+**Q: 移动端显示异常？**
+A: 请确保使用现代浏览器（Chrome、Safari、Firefox 等），并检查网络连接。
+
+**Q: 如何下载 APK 文件？**
+A: 访问 `index/dw/shing.apk` 路径即可下载。
 
 ---
 
